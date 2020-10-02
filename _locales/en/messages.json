@@ -1,0 +1,46 @@
+{
+    "extension_name": {
+        "message": "Ads Feed",
+        "description": "The extension's name."
+    },
+    "extension_description": {
+        "message": "Automatically save the ads you see on social networks and finally know which advertisers find you the most attractive online.",
+        "description": "The extension's short description that appears on the web store and `chrome://extensions`"
+    },
+    "whos_popup_headline": {
+        "message": "Ads Feed",
+        "description": "Title in the popup."
+    },
+    "whos_popup_sub_headline": {
+        "message": "Click on the chart to see the ads or change channel",
+        "description": "Sub headline in the popup."
+    },
+    "whos_popup_first_paragraph": {
+        "message": "Want see ads from the feed?<br> Keep using Facebook like you usually do, we'll do the rest!",
+        "description": "First paragraph."
+    },
+    "whos_popup_second_paragraph": {
+        "message": "(Please hold while we analyze results, when someone is following you, you'll see it immediately, we promise!)",
+        "description": "Second paragraph."
+    },
+    "whos_popup_dropdown_last24": {
+        "message": "Last 24h",
+        "description": "Text for last 24 hours."
+    },
+    "whos_popup_dropdown_last_week": {
+        "message": "Last week",
+        "description": "Text for last week."
+    },
+    "whos_popup_dropdown_last_month": {
+        "message": "Last month",
+        "description": "Text for last month."
+    },
+    "whos_popup_dropdown_last_year": {
+        "message": "Last year",
+        "description": "Text for last year."
+    },
+    "whos_popup_tos_notice": {
+        "description": "Text for the paragraph of EULA and Privacy policy",
+        "message": "<p>By using Ads Feed, you agree to our <a href=\"http://privacy.unimania.xyz/service_terms_af.pdf\" target=\"_blank\" rel=\"noopener\">Terms of Use</a>&nbsp;and <a href=\"http://privacy.unimania.xyz/privacy_policy_af.pdf\" target=\"_blank\" rel=\"noopener\">Privacy Policy</a>,</p>\n<p>Covering the collection of anonymous user demographics and ad data for market research purposes.</p>\n<p>Questions? <a title=\"Contact Us\" href=\"mailto:contact@unimania.xyz\" target=\"_blank\" rel=\"noopener\">Contact Us!</a></p>"
+    }
+}

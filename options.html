@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Panel extension options</title>
+        <meta charset="utf-8" />
+        <style media="screen" type="text/css">
+            input[type="checkbox"] {
+                margin-right: 5px;
+            }
+            body {
+                margin: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                Advanced Options
+            </h1>
+        </header>
+        <section>
+            <h3>
+                Debugging Options
+            </h3>
+            <div>
+                <br />
+                <label><input type="checkbox" id="ShouldShowFoundPosts" />Mark found posts in red</label> <br />
+                <label><input type="checkbox" id="OptOut" />Opt out</label>
+                <p>
+                    Unique Id for this client is:
+                    <span id="uniqueIdText"></span>
+                </p>
+                <br />
+            </div>
+        </section>
+        <script src="options.js"></script>
+    </body>
+</html>
