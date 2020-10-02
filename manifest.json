@@ -1,0 +1,95 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "__MSG_extension_name__",
+  "version": "2.10.1445",
+  "description": "__MSG_extension_description__",
+  "default_locale": "en",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "cookies",
+    "*://localhost/*",
+    "*://*.facebook.com/*",
+    "*://*.youtube.com/*",
+    "*://*.instagram.com/*",
+    "*://*.twitter.com/*",
+    "*://*.linkedin.com/*",
+    "*://*.amazon.com/*",
+    "*://*.amazon.co.uk/*",
+    "*://*.amazon.fr/*",
+    "*://*.amazon.de/*",
+    "*://*.amazon.es/*",
+    "*://*.pinterest.com/*",
+    "*://*.tiktok.com/*"
+  ],
+  "options_page": "options.html",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' http://localhost:8097 https://cdn.syndication.twimg.com https://platform.twitter.com https://www.google-analytics.com https://www.gstatic.com https://ajax.googleapis.com https://cdnjs.cloudflare.com https://connect.facebook.net; object-src 'self'",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "match_about_blank": false,
+      "matches": [
+        "http://www.facebook.com/*",
+        "https://www.facebook.com/*",
+        "http://www.linkedin.com/*",
+        "https://www.linkedin.com/*",
+        "https://*.twitter.com/*",
+        "https://*.pinterest.com/*",
+        "https://*.tiktok.com/*"
+      ],
+      "js": [
+        "contentDocumentStart.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    },
+    {
+      "match_about_blank": false,
+      "matches": [
+        "*://*.facebook.com/*",
+        "*://*.youtube.com/*",
+        "*://*.instagram.com/*",
+        "*://*.twitter.com/*",
+        "*://*.linkedin.com/*",
+        "*://*.amazon.com/*",
+        "*://*.amazon.co.uk/*",
+        "*://*.amazon.fr/*",
+        "*://*.amazon.de/*",
+        "*://*.amazon.es/*",
+        "*://*.pinterest.com/*",
+        "*://*.tiktok.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    },
+    {
+      "match_about_blank": false,
+      "matches": [
+        "http://*/*35rafsd2345qwefrr345rasdfas*",
+        "https://*/*35rafsd2345qwefrr345rasdfas*"
+      ],
+      "js": [
+        "content-script-for-mediator-iframe.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    "reactDevToolsBackend.js",
+    "mediatorMain.js"
+  ],
+  "manifest_version": 2,
+  "minimum_chrome_version": "49"
+}
